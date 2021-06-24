@@ -1,3 +1,0 @@
-export PATH=/data/qinhan/brpc/protobuf/output/bin:$PATH
-cmake3 .. -DCMAKE_INCLUDE_PATH="/data/qinhan/brpc/googletest/output/include;/data/qinhan/brpc/gperftools/output/include;/data/qinhan/brpc/gflags/output/include;/data/qinhan/brpc/leveldb/output/include;/data/qinhan/brpc/protobuf/output/include" -DCMAKE_LIBRARY_PATH="/data/qinhan/brpc/gflags/output/lib;/data/qinhan/brpc/leveldb/output/lib64;/data/qinhan/brpc/protobuf/output/lib;/data/qinhan/brpc/googletest/output/lib;/data/qinhan/brpc/gperftools/output/lib" -DBUILD_UNIT_TESTS=ON -DDEBUG=ON -DCMAKE_INSTALL_PREFIX=../output  -DDOWNLOAD_GTEST=OFF
-make -j
