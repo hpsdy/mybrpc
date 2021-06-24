@@ -1,0 +1,250 @@
+Determining if the function crc32c_value exists in the crc32c failed with the following output:
+Change Dir: /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_393f9/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_393f9.dir/build.make CMakeFiles/cmTC_393f9.dir/build
+gmake[1]: Entering directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_393f9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=crc32c_value   -std=c11 -o CMakeFiles/cmTC_393f9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_393f9
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_393f9.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=crc32c_value    CMakeFiles/cmTC_393f9.dir/CheckFunctionExists.c.o  -o cmTC_393f9 -lcrc32c 
+/usr/bin/ld: cannot find -lcrc32c
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_393f9] Error 1
+gmake[1]: Leaving directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_393f9/fast] Error 2
+
+
+Determining if the function snappy_compress exists in the snappy failed with the following output:
+Change Dir: /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_bb309/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_bb309.dir/build.make CMakeFiles/cmTC_bb309.dir/build
+gmake[1]: Entering directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb309.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=snappy_compress   -std=c11 -o CMakeFiles/cmTC_bb309.dir/CheckFunctionExists.c.o   -c /usr/share/cmake3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bb309
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_bb309.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=snappy_compress    CMakeFiles/cmTC_bb309.dir/CheckFunctionExists.c.o  -o cmTC_bb309 -lsnappy 
+/usr/bin/ld: cannot find -lsnappy
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_bb309] Error 1
+gmake[1]: Leaving directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_bb309/fast] Error 2
+
+
+Determining if the function malloc exists in the tcmalloc failed with the following output:
+Change Dir: /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_1165e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_1165e.dir/build.make CMakeFiles/cmTC_1165e.dir/build
+gmake[1]: Entering directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1165e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=malloc   -std=c11 -o CMakeFiles/cmTC_1165e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake3/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘malloc’ [enabled by default]
+/usr/share/cmake3/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^
+Linking C executable cmTC_1165e
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_1165e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=malloc    CMakeFiles/cmTC_1165e.dir/CheckFunctionExists.c.o  -o cmTC_1165e -ltcmalloc 
+/usr/bin/ld: cannot find -ltcmalloc
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_1165e] Error 1
+gmake[1]: Leaving directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_1165e/fast] Error 2
+
+
+Determining if the F_FULLFSYNC exist failed with the following output:
+Change Dir: /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_4786a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_4786a.dir/build.make CMakeFiles/cmTC_4786a.dir/build
+gmake[1]: Entering directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4786a.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_4786a.dir/CheckSymbolExists.cxx.o -c /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘F_FULLFSYNC’ was not declared in this scope
+   return ((int*)(&F_FULLFSYNC))[argc];
+                   ^
+gmake[1]: *** [CMakeFiles/cmTC_4786a.dir/CheckSymbolExists.cxx.o] Error 1
+gmake[1]: Leaving directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_4786a/fast] Error 2
+
+File /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef F_FULLFSYNC
+  return ((int*)(&F_FULLFSYNC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C++ SOURCE FILE Test HAVE_CLANG_THREAD_SAFETY failed with the following output:
+Change Dir: /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_87bca/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_87bca.dir/build.make CMakeFiles/cmTC_87bca.dir/build
+gmake[1]: Entering directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_87bca.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_CLANG_THREAD_SAFETY -Werror   -std=c++11 -o CMakeFiles/cmTC_87bca.dir/src.cxx.o -c /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx
+/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx:2:34: error: ‘lockable’ attribute directive ignored [-Werror=attributes]
+ struct __attribute__((lockable)) Lock {
+                                  ^
+/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx:3:59: error: ‘exclusive_lock_function’ attribute directive ignored [-Werror=attributes]
+   void Acquire() __attribute__((exclusive_lock_function()));
+                                                           ^
+/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx:4:51: error: ‘unlock_function’ attribute directive ignored [-Werror=attributes]
+   void Release() __attribute__((unlock_function()));
+                                                   ^
+/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx:8:46: error: ‘guarded_by’ attribute directive ignored [-Werror=attributes]
+   int data_ __attribute__((guarded_by(lock_)));
+                                              ^
+cc1plus: all warnings being treated as errors
+gmake[1]: *** [CMakeFiles/cmTC_87bca.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_87bca/fast] Error 2
+
+Source file was:
+
+struct __attribute__((lockable)) Lock {
+  void Acquire() __attribute__((exclusive_lock_function()));
+  void Release() __attribute__((unlock_function()));
+};
+struct ThreadSafeType {
+  Lock lock_;
+  int data_ __attribute__((guarded_by(lock_)));
+};
+int main() { return 0; }
+
+Performing C++ SOURCE FILE Test HAVE_CXX17_HAS_INCLUDE failed with the following output:
+Change Dir: /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_98c62/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_98c62.dir/build.make CMakeFiles/cmTC_98c62.dir/build
+gmake[1]: Entering directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_98c62.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_CXX17_HAS_INCLUDE   -std=c++11 -o CMakeFiles/cmTC_98c62.dir/src.cxx.o -c /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx
+/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx:2:45: error: missing binary operator before token "("
+ #if defined(__has_include) &&  __has_include(<string>)
+                                             ^
+/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx:5:14: error: ‘string’ is not a member of ‘std’
+ int main() { std::string str; return 0; }
+              ^
+/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx:5:26: error: expected ‘;’ before ‘str’
+ int main() { std::string str; return 0; }
+                          ^
+gmake[1]: *** [CMakeFiles/cmTC_98c62.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_98c62/fast] Error 2
+
+Source file was:
+
+#if defined(__has_include) &&  __has_include(<string>)
+#include <string>
+#endif
+int main() { std::string str; return 0; }
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7fd44/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_7fd44.dir/build.make CMakeFiles/cmTC_7fd44.dir/build
+gmake[1]: Entering directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7fd44.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_7fd44.dir/CheckSymbolExists.c.o   -c /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7fd44
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_7fd44.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_7fd44.dir/CheckSymbolExists.c.o  -o cmTC_7fd44 
+CMakeFiles/cmTC_7fd44.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_7fd44] Error 1
+gmake[1]: Leaving directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_7fd44/fast] Error 2
+
+File /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_379d1/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_379d1.dir/build.make CMakeFiles/cmTC_379d1.dir/build
+gmake[1]: Entering directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_379d1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -std=c11 -o CMakeFiles/cmTC_379d1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_379d1
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_379d1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_379d1.dir/CheckFunctionExists.c.o  -o cmTC_379d1 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_379d1] Error 1
+gmake[1]: Leaving directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_379d1/fast] Error 2
+
+
+Determining if the function sqlite3_open exists in the sqlite3 failed with the following output:
+Change Dir: /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_3d868/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3d868.dir/build.make CMakeFiles/cmTC_3d868.dir/build
+gmake[1]: Entering directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3d868.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sqlite3_open   -std=c11 -o CMakeFiles/cmTC_3d868.dir/CheckFunctionExists.c.o   -c /usr/share/cmake3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3d868
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_3d868.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sqlite3_open    CMakeFiles/cmTC_3d868.dir/CheckFunctionExists.c.o  -o cmTC_3d868 -lsqlite3 
+/usr/bin/ld: cannot find -lsqlite3
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_3d868] Error 1
+gmake[1]: Leaving directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_3d868/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_KYOTOCABINET failed with the following output:
+Change Dir: /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_231ae/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_231ae.dir/build.make CMakeFiles/cmTC_231ae.dir/build
+gmake[1]: Entering directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_231ae.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_KYOTOCABINET   -std=c++11 -o CMakeFiles/cmTC_231ae.dir/src.cxx.o -c /home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx
+/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp/src.cxx:2:22: fatal error: kcpolydb.h: No such file or directory
+ #include <kcpolydb.h>
+                      ^
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_231ae.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory `/home/work/brpc/leveldb/build/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_231ae/fast] Error 2
+
+Source file was:
+
+#include <kcpolydb.h>
+
+int main() {
+  kyotocabinet::TreeDB* db = new kyotocabinet::TreeDB();
+  delete db;
+  return 0;
+}
+  

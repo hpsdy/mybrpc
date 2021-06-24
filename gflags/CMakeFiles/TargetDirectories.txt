@@ -1,0 +1,6 @@
+/home/work/brpc/gflags/CMakeFiles/gflags.dir
+/home/work/brpc/gflags/CMakeFiles/gflags-shared.dir
+/home/work/brpc/gflags/CMakeFiles/gflags-static.dir
+/home/work/brpc/gflags/CMakeFiles/gflags_nothreads.dir
+/home/work/brpc/gflags/CMakeFiles/gflags_nothreads-shared.dir
+/home/work/brpc/gflags/CMakeFiles/gflags_nothreads-static.dir

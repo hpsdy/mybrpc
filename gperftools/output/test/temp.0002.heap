@@ -1,0 +1,51 @@
+heap profile:      0:        0 [     1: 536870912] @ heapprofile
+     0:        0 [     1: 536870912] @ 0x00400875 0x0040089b 0x7fc9dfae0495 0x00400799
+
+MAPPED_LIBRARIES:
+00400000-00401000 r-xp 00000000 00:00 1327239     /home/work/pprof/gperftools-gperftools-2.7/outputs/test/main
+00600000-00601000 r--p 00000000 00:00 1327239     /home/work/pprof/gperftools-gperftools-2.7/outputs/test/main
+00601000-00602000 rw-p 00001000 00:00 1327239     /home/work/pprof/gperftools-gperftools-2.7/outputs/test/main
+017cc000-220cc000 rw-p 00000000 00:00 0           [heap]
+7fc9df528000-7fc9df688000 rw-p 00000000 00:00 0           
+7fc9df688000-7fc9df69f000 r-xp 00000000 00:00 265470      /usr/lib64/libpthread-2.17.so
+7fc9df69f000-7fc9df89e000 ---p 00017000 00:00 265470      /usr/lib64/libpthread-2.17.so
+7fc9df89e000-7fc9df89f000 r--p 00016000 00:00 265470      /usr/lib64/libpthread-2.17.so
+7fc9df89f000-7fc9df8a0000 rw-p 00017000 00:00 265470      /usr/lib64/libpthread-2.17.so
+7fc9df8a0000-7fc9df8a4000 rw-p 00000000 00:00 0           
+7fc9df8a4000-7fc9df8af000 r-xp 00000000 00:00 265807      /usr/lib64/libunwind.so.8.0.1
+7fc9df8af000-7fc9dfaae000 ---p 0000b000 00:00 265807      /usr/lib64/libunwind.so.8.0.1
+7fc9dfaae000-7fc9dfaaf000 r--p 0000a000 00:00 265807      /usr/lib64/libunwind.so.8.0.1
+7fc9dfaaf000-7fc9dfab0000 rw-p 0000b000 00:00 265807      /usr/lib64/libunwind.so.8.0.1
+7fc9dfab0000-7fc9dfabe000 rw-p 00000000 00:00 0           
+7fc9dfabe000-7fc9dfc80000 r-xp 00000000 00:00 265443      /usr/lib64/libc-2.17.so
+7fc9dfc80000-7fc9dfe80000 ---p 001c2000 00:00 265443      /usr/lib64/libc-2.17.so
+7fc9dfe80000-7fc9dfe84000 r--p 001c2000 00:00 265443      /usr/lib64/libc-2.17.so
+7fc9dfe84000-7fc9dfe86000 rw-p 001c6000 00:00 265443      /usr/lib64/libc-2.17.so
+7fc9dfe86000-7fc9dfe8b000 rw-p 00000000 00:00 0           
+7fc9dfe8b000-7fc9dfea0000 r-xp 00000000 00:00 272651      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fc9dfea0000-7fc9e009f000 ---p 00015000 00:00 272651      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fc9e009f000-7fc9e00a0000 r--p 00014000 00:00 272651      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fc9e00a0000-7fc9e00a1000 rw-p 00015000 00:00 272651      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7fc9e00a1000-7fc9e01a2000 r-xp 00000000 00:00 265452      /usr/lib64/libm-2.17.so
+7fc9e01a2000-7fc9e03a1000 ---p 00101000 00:00 265452      /usr/lib64/libm-2.17.so
+7fc9e03a1000-7fc9e03a2000 r--p 00100000 00:00 265452      /usr/lib64/libm-2.17.so
+7fc9e03a2000-7fc9e03a3000 rw-p 00101000 00:00 265452      /usr/lib64/libm-2.17.so
+7fc9e03a3000-7fc9e048c000 r-xp 00000000 00:00 265806      /usr/lib64/libstdc++.so.6.0.19
+7fc9e048c000-7fc9e068b000 ---p 000e9000 00:00 265806      /usr/lib64/libstdc++.so.6.0.19
+7fc9e068b000-7fc9e0693000 r--p 000e8000 00:00 265806      /usr/lib64/libstdc++.so.6.0.19
+7fc9e0693000-7fc9e0695000 rw-p 000f0000 00:00 265806      /usr/lib64/libstdc++.so.6.0.19
+7fc9e0695000-7fc9e06aa000 rw-p 00000000 00:00 0           
+7fc9e06aa000-7fc9e06f0000 r-xp 00000000 00:00 1327128     /home/work/pprof/gperftools-gperftools-2.7/outputs/lib/libtcmalloc.so.4.5.3
+7fc9e06f0000-7fc9e08f0000 ---p 00046000 00:00 1327128     /home/work/pprof/gperftools-gperftools-2.7/outputs/lib/libtcmalloc.so.4.5.3
+7fc9e08f0000-7fc9e08f1000 r--p 00046000 00:00 1327128     /home/work/pprof/gperftools-gperftools-2.7/outputs/lib/libtcmalloc.so.4.5.3
+7fc9e08f1000-7fc9e08f2000 rw-p 00047000 00:00 1327128     /home/work/pprof/gperftools-gperftools-2.7/outputs/lib/libtcmalloc.so.4.5.3
+7fc9e08f2000-7fc9e0a9f000 rw-p 00000000 00:00 0           
+7fc9e0a9f000-7fc9e0ac1000 r-xp 00000000 00:00 265153      /usr/lib64/ld-2.17.so
+7fc9e0b6d000-7fc9e0cb4000 rw-p 00000000 00:00 0           
+7fc9e0cbc000-7fc9e0cc0000 rw-p 00000000 00:00 0           
+7fc9e0cc0000-7fc9e0cc1000 r--p 00021000 00:00 265153      /usr/lib64/ld-2.17.so
+7fc9e0cc1000-7fc9e0cc2000 rw-p 00022000 00:00 265153      /usr/lib64/ld-2.17.so
+7fc9e0cc2000-7fc9e0cc3000 rw-p 00000000 00:00 0           
+7fff9b5ea000-7fff9b60b000 rw-p 00000000 00:00 0           [stack]
+7fff9b6ab000-7fff9b6ad000 r-xp 00000000 00:00 0           [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0           [vsyscall]

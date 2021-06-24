@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O2 -DNDEBUG  -shared -Wl,-soname,libgflags_nothreads.so -o lib/libgflags_nothreads.so CMakeFiles/gflags_nothreads-shared.dir/src/gflags.cc.o CMakeFiles/gflags_nothreads-shared.dir/src/gflags_reporting.cc.o CMakeFiles/gflags_nothreads-shared.dir/src/gflags_completions.cc.o 
